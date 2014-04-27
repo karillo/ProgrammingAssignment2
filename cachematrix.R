@@ -3,7 +3,7 @@
 ## rather than recomputing it each time. Taken together, these functions 
 ## allow for calculating, caching and retrieving a matrix' inverse.
 ## (The inverse of a given matrix is the corresponding matrix whose dot product 
-## with the provided matrix will yield the identify matrix.)
+## with the provided matrix will yield the identity matrix.)
 
 ## For further reading on matrix inversion, see:
 ## [Wolfram Alpha](http://mathworld.wolfram.com/MatrixInverse.html)
@@ -19,11 +19,11 @@
 ### makeCacheMatrix
 ### - x (a matrix)
 ###
-### creates a wrapper for the provided matrix which consists of a series of 
+### creates a wrapper for the provided matrix which consists of a list of 
 ### functions, which allow for:
 ### - getting/setting the matrix
 ### - getting/setting the inverse of the matrix
-### returns this list to be used as an object elsewhere.
+### this list may be treated as an object elsewhere.
 ###
 
 makeCacheMatrix <- function(x = matrix()) {
